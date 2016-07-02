@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="speachApp" xmlns:text-align="http://www.w3.org/1999/xhtml">
+  <head>
+  </head>
+
+  <body>
+
+    {% raw %}
+    <div class="main" ng-controller ="MainCtrl">
+        {{ accuracy }} {{ delay }}
+        <button class="train" ng-click="predict('myvalue', 'myvalue', 'today')"> predicton </button>
+    </div>
+    {% endraw %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="static/js/angularapp.js"></script>
+  </body>
+</html>
